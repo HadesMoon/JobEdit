@@ -1,0 +1,68 @@
+.navbar-default {
+  background: #ffffff;
+}
+.tab-content .form-control {
+  width: 100px;
+  display: inline-block;
+  margin: 10px 0;
+}
+.btn-group {
+  position: relative;
+}
+.fontTable_style table {
+  border: 1px solid #666666;
+  margin-bottom: 5px;
+}
+.fontTable_style div {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-right: 1px solid #666666;
+}
+.fontBox_style {
+  border: 1px solid #cccccc;
+  padding: 5px;
+  position: absolute;
+  background-color: #ffffff;
+}
+.fontColor-choose {
+  top: 33px;
+  left: 145px;
+  display: none;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  position: absolute;
+  background-color: #ffffff;
+}
+.fontColor-choose table {
+  border: 1px solid #666666;
+  margin-bottom: 5px;
+}
+.fontColor-choose div {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-right: 1px solid #666666;
+}
+.fontBg-choose {
+  top: 33px;
+  left: 184px;
+  display: none;
+  border: 1px solid #cccccc;
+  padding: 5px;
+  position: absolute;
+  background-color: #ffffff;
+}
+.fontBg-choose table {
+  border: 1px solid #666666;
+  margin-bottom: 5px;
+}
+.fontBg-choose div {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-right: 1px solid #666666;
+}
+.border-edit {
+  margin-top: 10px;
+}

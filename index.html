@@ -3,8 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <title>简历模版</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#changyong" aria-controls="home" role="tab" data-toggle="tab">常用</a></li>
+            <li role="presentation"><a href="#gezi" aria-controls="profile" role="tab" data-toggle="tab">格子</a></li>
+            <li role="presentation"><a href="#jianju" aria-controls="messages" role="tab" data-toggle="tab">间距</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">设置</a></li>
+        </ul>
 
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="changyong">
+                <div>
+                    <select name="fontName" id="fontName" class="form-control">
+                        <option value="宋体">宋体</option>
+                        <option value="黑体">黑体</option>
+                        <option value="楷体">楷体</option>
+                        <option value="仿宋">仿宋</option>
+                        <option value="Arial">Arial</option>
+                    </select>
+                    <select name="fontSize" id="fontSize" class="form-control">
+                        <option value="1">1pt</option>
+                        <option value="5">5pt</option>
+                        <option value="5.5">5.5pt</option>
+                        <option value="6.5">6.5pt</option>
+                        <option value="7.5">7.5pt</option>
+                        <option value="8">8pt</option>
+                        <option value="9">9pt</option>
+                        <option value="10">10pt</option>
+                        <option value="10.5">10.5pt</option>
+                        <option value="11">11pt</option>
+                        <option value="12">12pt</option>
+                        <option value="14">14pt</option>
+                        <option value="15">15pt</option>
+                        <option value="16">16pt</option>
+                        <option value="18">18pt</option>
+                        <option value="20">20pt</option>
+                        <option value="22">22pt</option>
+                        <option value="24">24pt</option>
+                        <option value="26">26pt</option>
+                        <option value="28">28pt</option>
+                        <option value="36">36pt</option>
+                        <option value="48">42pt</option>
+                        <option value="72">72pt</option>
+                    </select>
+                </div>
+
+
+                <div class="btn-group">
+                    <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="加粗"><span class="glyphicon glyphicon-bold"></span></button>
+                    <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="斜体"><span class="glyphicon glyphicon-italic"></span></button>
+                    <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="下划线">下划线</button>
+                    <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="字体颜色"><span class="glyphicon glyphicon-text-color"></span></button>
+                    <button class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="文字背景"><span class="glyphicon glyphicon-text-background"></span></button>
+
+                    <div class="fontColor-choose">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td><div title="#000000" style="background-color: rgb(0, 0, 0);"></div></td>
+                                <td><div title="#444444" style="background-color: rgb(68, 68, 68);"></div></td>
+                                <td><div title="#666666" style="background-color: rgb(102, 102, 102);"></div></td>
+                                <td><div title="#999999" style="background-color: rgb(153, 153, 153);"></div></td>
+                                <td><div title="#cccccc" style="background-color: rgb(204, 204, 204);"></div></td>
+                                <td><div title="#eeeeee" style="background-color: rgb(238, 238, 238);"></div></td>
+                                <td><div title="#f3f3f3" style="background-color: rgb(243, 243, 243);"></div></td>
+                                <td><div title="#ffffff" style="background-color: rgb(255, 255, 255);"></div></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td><div title="#ff0000" style="background-color: rgb(255, 0, 0);"></div></td>
+                                <td><div title="#ff9900" style="background-color: rgb(255, 153, 0);"></div></td>
+                                <td><div title="#ffff00" style="background-color: rgb(255, 255, 0);"></div></td>
+                                <td><div title="#00ff00" style="background-color: rgb(0, 255, 0);"></div></td>
+                                <td><div title="#00ffff" style="background-color: rgb(0, 255, 255);"></div></td>
+                                <td><div title="#0000ff" style="background-color: rgb(0, 0, 255);"></div></td>
+                                <td><div title="#9900ff" style="background-color: rgb(153, 0, 255);"></div></td>
+                                <td><div title="#ff00ff" style="background-color: rgb(255, 0, 255);"></div></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td><div title="#f4cccc" style="background-color: rgb(244, 204, 204);"></div></td>
+                                <td><div title="#fce5cd" style="background-color: rgb(252, 229, 205);"></div></td>
+                                <td><div title="#fff2cc" style="background-color: rgb(255, 242, 204);"></div></td>
+                                <td><div title="#d9ead3" style="background-color: rgb(217, 234, 211);"></div></td>
+                                <td><div title="#d0e0e3" style="background-color: rgb(208, 224, 227);"></div></td>
+                                <td><div title="#cfe2f3" style="background-color: rgb(207, 226, 243);"></div></td>
+                                <td><div title="#d9d2e9" style="background-color: rgb(217, 210, 233);"></div></td>
+                                <td><div title="#ead1dc" style="background-color: rgb(234, 209, 220);"></div></td>
+                            </tr>
+                            <tr>
+                                <td><div title="#ea9999" style="background-color: rgb(234, 153, 153);"></div></td>
+                                <td><div title="#f9cb9c" style="background-color: rgb(249, 203, 156);"></div></td>
+                                <td><div title="#ffe599" style="background-color: rgb(255, 229, 153);"></div></td>
+                                <td><div title="#b6d7a8" style="background-color: rgb(182, 215, 168);"></div></td>
+                                <td><div title="#a2c4c9" style="background-color: rgb(162, 196, 201);"></div></td>
+                                <td><div title="#9fc5e8" style="background-color: rgb(159, 197, 232);"></div></td>
+                                <td><div title="#b4a7d6" style="background-color: rgb(180, 167, 214);"></div></td>
+                                <td><div title="#d5a6bd" style="background-color: rgb(213, 166, 189);"></div></td>
+                            </tr>
+                            <tr>
+                                <td><div title="#e06666" style="background-color: rgb(224, 102, 102);"></div></td>
+                                <td><div title="#f6b26b" style="background-color: rgb(246, 178, 107);"></div></td>
+                                <td><div title="#ffd966" style="background-color: rgb(255, 217, 102);"></div></td>
+                                <td><div title="#93c47d" style="background-color: rgb(147, 196, 125);"></div></td>
+                                <td><div title="#76a5af" style="background-color: rgb(118, 165, 175);"></div></td>
+                                <td><div title="#6fa8dc" style="background-color: rgb(111, 168, 220);"></div></td>
+                                <td><div title="#8e7cc3" style="background-color: rgb(142, 124, 195);"></div></td>
+                                <td><div title="#c27ba0" style="background-color: rgb(194, 123, 160);"></div></td>
+                            </tr>
+                            <tr>
+                                <td><div title="#cc0000" style="background-color: rgb(204, 0, 0);"></div></td>
+                                <td><div title="#e69138" style="background-color: rgb(230, 145, 56);"></div></td>
+                                <td><div title="#f1c232" style="background-color: rgb(241, 194, 50);"></div></td>
+                                <td><div title="#6aa84f" style="background-color: rgb(106, 168, 79);"></div></td>
+                                <td><div title="#45818e" style="background-color: rgb(69, 129, 142);"></div></td>
+                                <td><div title="#3d85c6" style="background-color: rgb(61, 133, 198);"></div></td>
+                                <td><div title="#674ea7" style="background-color: rgb(103, 78, 167);"></div></td>
+                                <td><div title="#a64d79" style="background-color: rgb(166, 77, 121);"></div></td>
+                            </tr><tr><td><div title="#990000" style="background-color: rgb(153, 0, 0);"></div></td>
+                                <td><div title="#b45f06" style="background-color: rgb(180, 95, 6);"></div></td>
+                                <td><div title="#bf9000" style="background-color: rgb(191, 144, 0);"></div></td>
+                                <td><div title="#38761d" style="background-color: rgb(56, 118, 29);"></div></td>
+                                <td><div title="#134f5c" style="background-color: rgb(19, 79, 92);"></div></td>
+                                <td><div title="#0b5394" style="background-color: rgb(11, 83, 148);"></div></td>
+                                <td><div title="#351c75" style="background-color: rgb(53, 28, 117);"></div></td>
+                                <td><div title="#741b47" style="background-color: rgb(116, 27, 71);"></div></td>
+                            </tr>
+                            <tr><td><div title="#660000" style="background-color: rgb(102, 0, 0);"></div></td>
+                                <td><div title="#783f04" style="background-color: rgb(120, 63, 4);"></div></td>
+                                <td><div title="#7f6000" style="background-color: rgb(127, 96, 0);"></div></td>
+                                <td><div title="#274e13" style="background-color: rgb(39, 78, 19);"></div></td>
+                                <td><div title="#0c343d" style="background-color: rgb(12, 52, 61);"></div></td>
+                                <td><div title="#073763" style="background-color: rgb(7, 55, 99);"></div></td>
+                                <td><div title="#20124d" style="background-color: rgb(32, 18, 77);"></div></td>
+                                <td><div title="#4c1130" style="background-color: rgb(76, 17, 48);"></div></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="fontBg-choose">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td><div title="#000000" style="background-color: rgb(0, 0, 0);"></div></td>
+                                <td><div title="#444444" style="background-color: rgb(68, 68, 68);"></div></td>
+                                <td><div title="#666666" style="background-color: rgb(102, 102, 102);"></div></td>
+                                <td><div title="#999999" style="background-color: rgb(153, 153, 153);"></div></td>
+                                <td><div title="#cccccc" style="background-color: rgb(204, 204, 204);"></div></td>
+                                <td><div title="#eeeeee" style="background-color: rgb(238, 238, 238);"></div></td>
+                                <td><div title="#f3f3f3" style="background-color: rgb(243, 243, 243);"></div></td>
+                                <td><div title="#ffffff" style="background-color: rgb(255, 255, 255);"></div></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td><div title="#ff0000" style="background-color: rgb(255, 0, 0);"></div></td>
+                                <td><div title="#ff9900" style="background-color: rgb(255, 153, 0);"></div></td>
+                                <td><div title="#ffff00" style="background-color: rgb(255, 255, 0);"></div></td>
+                                <td><div title="#00ff00" style="background-color: rgb(0, 255, 0);"></div></td>
+                                <td><div title="#00ffff" style="background-color: rgb(0, 255, 255);"></div></td>
+                                <td><div title="#0000ff" style="background-color: rgb(0, 0, 255);"></div></td>
+                                <td><div title="#9900ff" style="background-color: rgb(153, 0, 255);"></div></td>
+                                <td><div title="#ff00ff" style="background-color: rgb(255, 0, 255);"></div></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td><div title="#f4cccc" style="background-color: rgb(244, 204, 204);"></div></td>
+                                <td><div title="#fce5cd" style="background-color: rgb(252, 229, 205);"></div></td>
+                                <td><div title="#fff2cc" style="background-color: rgb(255, 242, 204);"></div></td>
+                                <td><div title="#d9ead3" style="background-color: rgb(217, 234, 211);"></div></td>
+                                <td><div title="#d0e0e3" style="background-color: rgb(208, 224, 227);"></div></td>
+                                <td><div title="#cfe2f3" style="background-color: rgb(207, 226, 243);"></div></td>
+                                <td><div title="#d9d2e9" style="background-color: rgb(217, 210, 233);"></div></td>
+                                <td><div title="#ead1dc" style="background-color: rgb(234, 209, 220);"></div></td>
+                            </tr>
+                            <tr>
+                                <td><div title="#ea9999" style="background-color: rgb(234, 153, 153);"></div></td>
+                                <td><div title="#f9cb9c" style="background-color: rgb(249, 203, 156);"></div></td>
+                                <td><div title="#ffe599" style="background-color: rgb(255, 229, 153);"></div></td>
+                                <td><div title="#b6d7a8" style="background-color: rgb(182, 215, 168);"></div></td>
+                                <td><div title="#a2c4c9" style="background-color: rgb(162, 196, 201);"></div></td>
+                                <td><div title="#9fc5e8" style="background-color: rgb(159, 197, 232);"></div></td>
+                                <td><div title="#b4a7d6" style="background-color: rgb(180, 167, 214);"></div></td>
+                                <td><div title="#d5a6bd" style="background-color: rgb(213, 166, 189);"></div></td>
+                            </tr>
+                            <tr>
+                                <td><div title="#e06666" style="background-color: rgb(224, 102, 102);"></div></td>
+                                <td><div title="#f6b26b" style="background-color: rgb(246, 178, 107);"></div></td>
+                                <td><div title="#ffd966" style="background-color: rgb(255, 217, 102);"></div></td>
+                                <td><div title="#93c47d" style="background-color: rgb(147, 196, 125);"></div></td>
+                                <td><div title="#76a5af" style="background-color: rgb(118, 165, 175);"></div></td>
+                                <td><div title="#6fa8dc" style="background-color: rgb(111, 168, 220);"></div></td>
+                                <td><div title="#8e7cc3" style="background-color: rgb(142, 124, 195);"></div></td>
+                                <td><div title="#c27ba0" style="background-color: rgb(194, 123, 160);"></div></td>
+                            </tr>
+                            <tr>
+                                <td><div title="#cc0000" style="background-color: rgb(204, 0, 0);"></div></td>
+                                <td><div title="#e69138" style="background-color: rgb(230, 145, 56);"></div></td>
+                                <td><div title="#f1c232" style="background-color: rgb(241, 194, 50);"></div></td>
+                                <td><div title="#6aa84f" style="background-color: rgb(106, 168, 79);"></div></td>
+                                <td><div title="#45818e" style="background-color: rgb(69, 129, 142);"></div></td>
+                                <td><div title="#3d85c6" style="background-color: rgb(61, 133, 198);"></div></td>
+                                <td><div title="#674ea7" style="background-color: rgb(103, 78, 167);"></div></td>
+                                <td><div title="#a64d79" style="background-color: rgb(166, 77, 121);"></div></td>
+                            </tr><tr><td><div title="#990000" style="background-color: rgb(153, 0, 0);"></div></td>
+                                <td><div title="#b45f06" style="background-color: rgb(180, 95, 6);"></div></td>
+                                <td><div title="#bf9000" style="background-color: rgb(191, 144, 0);"></div></td>
+                                <td><div title="#38761d" style="background-color: rgb(56, 118, 29);"></div></td>
+                                <td><div title="#134f5c" style="background-color: rgb(19, 79, 92);"></div></td>
+                                <td><div title="#0b5394" style="background-color: rgb(11, 83, 148);"></div></td>
+                                <td><div title="#351c75" style="background-color: rgb(53, 28, 117);"></div></td>
+                                <td><div title="#741b47" style="background-color: rgb(116, 27, 71);"></div></td>
+                            </tr>
+                            <tr><td><div title="#660000" style="background-color: rgb(102, 0, 0);"></div></td>
+                                <td><div title="#783f04" style="background-color: rgb(120, 63, 4);"></div></td>
+                                <td><div title="#7f6000" style="background-color: rgb(127, 96, 0);"></div></td>
+                                <td><div title="#274e13" style="background-color: rgb(39, 78, 19);"></div></td>
+                                <td><div title="#0c343d" style="background-color: rgb(12, 52, 61);"></div></td>
+                                <td><div title="#073763" style="background-color: rgb(7, 55, 99);"></div></td>
+                                <td><div title="#20124d" style="background-color: rgb(32, 18, 77);"></div></td>
+                                <td><div title="#4c1130" style="background-color: rgb(76, 17, 48);"></div></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="gezi">
+                <div class="row">
+                    <div class="col-md-3 border-edit">
+                        <div class="btn-group">
+                            <button class="btn btn-default" disabled>边框</button>
+                            <button class="btn btn-default">上</button>
+                            <button class="btn btn-default">下</button>
+                            <button class="btn btn-default">左</button>
+                            <button class="btn btn-default">右</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-default">颜色</button>
+                            <button class="btn btn-default"></button>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="jianju">...</div>
+            <div role="tabpanel" class="tab-pane" id="settings">...</div>
+        </div>
+    </div>
+</nav>
+
+
+<script src="http://libs.baidu.com/jquery/1.10.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
